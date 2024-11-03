@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Sidebar from './Sidebar';
 import styles from '@/styles/Header.module.css';
+import Link from 'next/link';
 
 export default function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -28,15 +29,16 @@ export default function Header() {
 
       {/* ナビゲーションボタン */}
       <nav className={styles.navButtons}>
-        <a href="/" className={styles.navButton}>Home</a>
-        <a href="/about" className={styles.navButton}>About</a>
-        <a href="/services" className={styles.navButton}>Services</a>
-        <a href="/contact" className={styles.navButton}>Contact</a>
+        <link href="/" className={styles.navButton}>Home</link>
+        <link href="/about" className={styles.navButton}>About</link>
+        <link href="/services" className={styles.navButton}>Services</link>
+        <link href="/contact" className={styles.navButton}>Contact</link>
       </nav>
 
       {/* サイドバー（モバイル用） */}
       <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       {isSidebarOpen && <div className={styles.overlay} onClick={toggleSidebar}></div>}
+      
     </>
   );
 }

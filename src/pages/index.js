@@ -23,8 +23,7 @@ export default function HomePage() {
         </section>
         <section className={styles.section}>
           <h2>サービス</h2>
-          <p>シンプルでモダンなUIを目指したデザインです。</p>
-          <a></a>
+          <p>シンプルでモダンなUIを目指したデザインです。</p>          
         </section>git branch
       </main>
       <footer className={styles.footer}>
