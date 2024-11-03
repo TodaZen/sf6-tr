@@ -1,0 +1,52 @@
+
+
+.root {
+  --primary-color: #4CAF50; /* 主なカラー */
+  --text-color: #333;
+  --background-color: #f9f9f9;
+}
+
+.body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.header {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.section p {
+  line-height: 1.6;
+}
+
+.footer {
+  background-color: var(--text-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+

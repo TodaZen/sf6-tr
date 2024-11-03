@@ -1,0 +1,73 @@
+/* ヘッダーのスタイル */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+/* ハンバーガーメニューアイコン */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* ナビゲーションボタンのスタイル */
+.navButtons {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  padding: 0.5rem;
+  position: fixed;
+  top: 60px; /* ヘッダーの下に表示 */
+  width: 100%;
+  z-index: 900;
+}
+
+.navButton {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #555;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navButton:hover {
+  background-color: #777;
+}
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+  .navButtons {
+    display: none; /* モバイルでは非表示にし、サイドバーに移動 */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
