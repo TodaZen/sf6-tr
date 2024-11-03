@@ -24,6 +24,7 @@ export default function HomePage() {
         <section className={styles.section}>
           <h2>サービス</h2>
           <p>シンプルでモダンなUIを目指したデザインです。</p>
+          <a></a>
         </section>git branch
       </main>
       <footer className={styles.footer}>
